@@ -2,6 +2,7 @@
   text-align: center;
   min-height: 100vh;
   background-color: #bdb6c9;
+  padding: 24px;
 }
 
 .App-header {
@@ -11,29 +12,26 @@
   justify-content: flex-start;
   padding-left: 20px;
   position: relative;
-  overflow: hidden;
 }
 
 .App-logo-container {
-  animation: App-logo-move 2s linear forwards;
+  animation: App-logo-move 1s linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 @keyframes App-logo-move {
-  0% {
-    transform: translateX(-100%);
+  from {
+    transform: translateX(0)
   }
-  100% {
-    transform: translateX(0);
+  to {
+    transform: translateX(100%)
   }
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 .App-content {
@@ -49,6 +47,11 @@
   color: #61dafb;
 }
 
-.align-left {
-  float: left;
+.text {
+  margin: 0;
+}
+
+.ryan-img {
+  margin: 40px auto;
+  width: 50vw;
 }
