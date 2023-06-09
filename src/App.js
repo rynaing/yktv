@@ -15,7 +15,7 @@ function App() {
         <p>
           yerrrrrrrrr
         </p>
-        <img src={ryanBabyPic} className="ryan-img" />
+        <img src={ryanBabyPic} className="ryan-img" alt="ryan" />
         <h2 className='text'>
           SAM | ORION | RYAN
         </h2>
