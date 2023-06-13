@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import ryanBabyPic from './assets/ryan_two_years_old_imp.jpg';
+import samPic from './assets/sam_drinking_bottle.jpg';
+
 import './App.css';
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
         <p>
           yerrrrrrrrr
         </p>
-        <img src={ryanBabyPic} className="ryan-img" alt="ryan" />
+        <img src={ryanBabyPic} className="ryan-img" alt="ryan" style={{ width: '50%', margin: 'auto' }} />
+        <hr></hr>
+        <img src={samPic} className="sam-img" alt="sam" style={{ width: '50%', margin: 'auto'}} />
         <h2 className='text'>
           SAM | ORION | RYAN
         </h2>
