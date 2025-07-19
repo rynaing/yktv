@@ -35,7 +35,7 @@ function Home() {
       <section className="App-section">
         <h2>Contact</h2>
         <p>Have questions, ideas, or want to collaborate?</p>
-        <p>Email us at: <a href="mailto:info@hydroponics.nyc">info@hydroponics.nyc</a></p>
+        <p>Email us at: <a href="mailto:technologysor@gmail.com">info@hydroponics.nyc</a></p>
       </section>
 
       <section className="App-section" style={{ textAlign: 'center' }}>
