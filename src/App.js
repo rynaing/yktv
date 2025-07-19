@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Founders from './Founders';
+import Products from './Products';
 import './App.css';
 import nugImg from './assets/nug.jpg';
-
 
 function Home() {
   return (
@@ -12,7 +12,10 @@ function Home() {
         <h1>Hydroponics.NYC</h1>
         <h2>Premium Hydroponic Cannabis from the NYC–NJ Region</h2>
         <p>Locally grown. Sustainably cultivated. Powered by clean hydroponic systems.</p>
-        <a className="cta-button" href="mailto:info@hydroponics.nyc">Get in Touch</a>
+        <a className="cta-button" href="mailto:sortechnologies@gmail.com">
+          <i className="fas fa-envelope" style={{ marginRight: '8px' }}></i>
+          Get in Touch
+        </a>
       </header>
 
       <section className="App-section">
@@ -34,8 +37,16 @@ function Home() {
 
       <section className="App-section">
         <h2>Contact</h2>
-        <p>Have questions, ideas, or want to collaborate?</p>
-        <p>Email us at: <a href="mailto:technologysor@gmail.com">info@hydroponics.nyc</a></p>
+        <p>
+          <i className="fas fa-envelope"></i> Email us at:{" "}
+          <a href="mailto:sortechnologies@gmail.com">sortechnologies@gmail.com</a>
+        </p>
+        <p>
+          <i className="fab fa-instagram"></i> Follow us on Instagram:{" "}
+          <a href="https://instagram.com/sortechnologies" target="_blank" rel="noopener noreferrer">
+            @sortechnologies
+          </a>
+        </p>
       </section>
 
       <section className="App-section" style={{ textAlign: 'center' }}>
@@ -56,10 +67,12 @@ function App() {
     <Router>
       <nav className="App-nav">
         <Link to="/">Home</Link>
+        <Link to="/products">Products</Link>
         <Link to="/founders">Founders</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/founders" element={<Founders />} />
       </Routes>
     </Router>
