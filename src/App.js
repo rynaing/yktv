@@ -4,6 +4,7 @@ import Founders from './Founders';
 import Products from './Products';
 import './App.css';
 import nugImg from './assets/nug.jpg';
+import Konami from 'react-konami-code';
 
 function Home() {
   return (
@@ -62,6 +63,19 @@ function Home() {
   );
 }
 
+
+// 🎮 Easter Egg: Unlock message on Konami Code
+function EasterEgg() {
+  const customCode = [72, 89, 68, 82, 79];
+  return (
+    <Konami
+      code={customCode}
+      action={() => alert('🌿 You unlocked the secret grow room! 🌿')}
+  
+    />
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -70,6 +84,8 @@ function App() {
         <Link to="/products">Products</Link>
         <Link to="/founders">Founders</Link>
       </nav>
+
+      <EasterEgg />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
