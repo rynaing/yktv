@@ -12,7 +12,7 @@ function Home() {
         <h1>Hydroponics.NYC</h1>
         <h2>Premium Hydroponic Cannabis from the NYC–NJ Region</h2>
         <p>Locally grown. Sustainably cultivated. Powered by clean hydroponic systems.</p>
-        <a className="cta-button" href="mailto:sortechnologies@gmail.com">
+        <a className="cta-button" href="mailto:technologysor@gmail.com">
           <i className="fas fa-envelope" style={{ marginRight: '8px' }}></i>
           Get in Touch
         </a>
@@ -39,7 +39,7 @@ function Home() {
         <h2>Contact</h2>
         <p>
           <i className="fas fa-envelope"></i> Email us at:{" "}
-          <a href="mailto:sortechnologies@gmail.com">sortechnologies@gmail.com</a>
+          <a href="mailto:technologysor@gmail.com">technologysor@gmail.com</a>
         </p>
         <p>
           <i className="fab fa-instagram"></i> Follow us on Instagram:{" "}
