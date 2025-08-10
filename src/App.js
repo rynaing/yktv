@@ -53,7 +53,9 @@ function Home() {
       <section className="App-section" style={{ textAlign: 'center' }}>
         <h2>Featured Nug: Wedding Cake</h2>
         <img src={nugImg} alt="Wedding Cake Nug" className="nug-pic" />
-        <p>This frosty, potent indica-dominant hybrid is grown locally with care using our hydroponic system. Perfect for winding down.</p>
+        <p>
+          This frosty, potent indica-dominant hybrid is grown locally with care using our hydroponic system. Perfect for winding down.
+        </p>
       </section>
 
       <footer className="App-footer">
