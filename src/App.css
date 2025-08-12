@@ -97,6 +97,12 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+.ryan-pic {
+  height: 320px;
+  object-fit: cover;
+  object-position: top;
+}
+
 .App-footer {
   background-color: #f1f1f1;
   color: #666;
