@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Founders from './Founders';
 import Products from './Products';
@@ -7,16 +7,38 @@ import nugImg from './assets/nug.jpg';
 import Konami from 'react-konami-code';
 
 function Home() {
+  const [showContact, setShowContact] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const handleSend = () => {
+    if (!message.trim()) return;
+    window.location.href = `mailto:ry.naing@gmail.com?subject=Website%20Inquiry&body=${encodeURIComponent(message)}`;
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>Hydroponics.NYC</h1>
         <h2>Premium Hydroponic Cannabis from the NYC–NJ Region</h2>
         <p>Locally grown. Sustainably cultivated. Powered by clean hydroponic systems.</p>
-        <a className="cta-button" href="mailto:technologysor@gmail.com">
-          <i className="fas fa-envelope" style={{ marginRight: '8px' }}></i>
-          Get in Touch
-        </a>
+        {!showContact ? (
+          <button className="cta-button" onClick={() => setShowContact(true)}>
+            <i className="fas fa-envelope" style={{ marginRight: '8px' }}></i>
+            Get in Touch
+          </button>
+        ) : (
+          <div className="contact-form">
+            <textarea
+              placeholder="Type your question or message here..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              rows="4"
+            />
+            <button className="cta-button" onClick={handleSend} disabled={!message.trim()}>
+              Send
+            </button>
+          </div>
+        )}
       </header>
 
       <section className="App-section">
@@ -40,7 +62,7 @@ function Home() {
         <h2>Contact</h2>
         <p>
           <i className="fas fa-envelope"></i> Email us at:{" "}
-          <a href="mailto:technologysor@gmail.com">technologysor@gmail.com</a>
+          <a href="mailto:ry.naing@gmail.com">ry.naing@gmail.com</a>
         </p>
         <p>
           <i className="fab fa-instagram"></i> Follow us on Instagram:{" "}
