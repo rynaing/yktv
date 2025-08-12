@@ -14,7 +14,7 @@ function Founders() {
 
       <section className="App-section" style={{ textAlign: 'center' }}>
         <h2>Ryan</h2>
-        <img src={ryanBabyPic} alt="Baby Ryan" className="baby-pic" />
+        <img src={ryanBabyPic} alt="Baby Ryan" className="baby-pic ryan-pic" />
         <p>A future CEO with snack time energy.</p>
 
         <h2>Sam</h2>
